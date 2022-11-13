@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around The World</title>
+
+    <!-- font aweson -->
+    <script src="https://kit.fontawesome.com/6aa1d8a8bb.js" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="STYLE.CSS">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+</head>
+
+<header>
+    <div class="header-logo"> <img src="imgenes/viaje.png" alt="Porelmundo">
+    <h1>POR EL MUNDO</h1></div>
+</header>
+
+<body>
+    <nav class="navegador">
+        <ul>
+            <li><a href="index.html">INICIO</a> </li>
+            <li><a href="destinos.html">DESTINOS</a></li>
+            <li><a href="Articulos.html">ARTICULOS</a></li>
+            <li><a href="voluntariado.html">VOLUNTARIADO</a></li>
+        </ul>
+    </nav>
+    <section class="contacto">
+        <h2>CONTACTO</h2>
+        <div>
+            <form id="contactoform" action="">
+
+                <label for="nombre" >Nombre</label>
+                <br>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre..">
+                <br>
+
+                <label for="apellido">Apellido</label>
+                <br>
+                <input type="text" id="apellido" placeholder="Ingrese su apellido..">
+                <br>
+
+                <label for="email">Correo electrónico</label>
+                <br>
+                <input type="text" id="email" placeholder="Ingresa tu correo electrónico">
+                <br>
+
+                <label for="telefono">Numero de Teléfono</label>
+                <br>
+                <input type="text" id="telefono" placeholder="Ingresa tu numero de teléfono">
+                <br>
+
+                <label for="mensaje">Mensaje</label>
+                <br>
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <br>
+
+                <input class="button" type="submit" onclick="validarFormulario()" value="Enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <script src="JS/formulario.js"></script>
+
+</body>
+<footer>
+    <div class="social-media">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+
+</footer>

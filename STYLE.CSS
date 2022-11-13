@@ -1,0 +1,322 @@
+*
+{
+font-family: 'Maven Pro', sans-serif;
+}
+
+html{font-size: 100%;
+    }
+
+body,header,main,footer 
+{
+background-color: beige;
+margin: 0;
+} 
+main{
+    width: 100%;
+}
+
+/* HeADER */
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(114, 196, 211);
+}
+
+.header-logo{
+    text-align: center;
+    width: 50%;
+    border-radius: 20%; }
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: inherit;}
+
+    /* BODY- NAVEGADOR */
+
+
+.navegador{
+    margin: 35px;
+    display: block;
+    background-color: beige;
+    }
+
+.navegador ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+@media screen and (max-width: 640px) {
+    .navegador {background: rgb(245, 245, 208);}}
+        
+@media (max-width: 760px) {
+    .navegador ul {
+     padding: 0;
+    flex-direction: column;
+    }}
+        
+
+ul li a{
+    text-decoration: none;
+    color: #a09797;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;}
+
+a:hover{
+    color: #000;
+}
+
+    /* PRINCIPAL */
+
+main
+{min-height: 250px;
+background-color: beige;} 
+    
+#viaja
+/* {border: 2px rgb(101, 173, 101) solid;  */
+{margin: 0.5rem;
+width: 99vw;}
+
+.cupo{
+    font-family: 'Shadows Into Light Two', cursive;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+}
+    
+.destin
+/* {border: 2px rgb(126, 100, 100) solid; */
+{margin: 0.5rem;
+background-color: beige ;
+padding: 20px;} 
+
+.container-destino{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: beige;
+    
+}
+
+.destinos-cont {
+    margin: 10px;
+    cursor: pointer;
+    width: 25%;
+    font-size: 12px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgb(182 182 182);
+    transition: transform 0.5s;
+}
+@media (max-width: 576px){
+.container-destino {
+    flex-direction: column;
+    align-items: center;
+}}
+@media (max-width: 576px){
+    .destinos-cont {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }}
+
+.todos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destinos-cont:hover{
+    box-shadow: 0px 10px 15px 5px rgb(182 182 182);
+    transform: translateY(-10px);
+}
+
+.img-dest{
+    max-width: 100%;
+}
+
+.paises{
+    font-size:large;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: inherit;
+    padding: 20px;
+}
+
+.articulo{
+    min-height: 50px; 
+    margin: 0.5rem;
+    background-color:beige;
+    background-image: url(imgenes/irlanda2.jpg);
+    background-position: 50%;
+    background-size: cover;
+    height: 400px;
+    padding-top: 80px;
+    text-align: center;
+    background-repeat: no-repeat;
+    color: #ffff
+}
+
+.irlanda-section h3{
+    font-size: 50px;
+}
+.p-irlanda{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 60px;
+    letter-spacing: 3px;
+}
+.irlanda-section a{
+    font-size: 20px;
+    padding-top: 30px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #ffff;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+/* SOCIAL MEDIA */
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px;}
+footer a{
+    padding: 15px;
+    color: #000;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.social-media i{
+    color: #475153;
+    font-size: 20px;}
+
+.social-media i:hover{
+        color: #000;
+    }
+
+.destinos-conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+}
+
+.article-conteiner{
+    text-align: center;
+    background-color: #ebc4cc;
+    padding-top: 50px;
+}
+.h2-article{
+    text-transform: uppercase;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+}
+.p-article{
+    margin: 30px 80px;
+}
+.div-article{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+@media (max-width: 576px){
+    .div-article{
+        flex-direction: column;
+        align-items: center;
+    }}
+
+.contacto{
+    padding: 50px;
+    text-align: center;
+}
+.contacto h2{
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+#contactoform label {
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#contactoform input {
+    margin: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 50%
+}
+
+@media (max-width: 760px) {
+.contactoform input {
+    margin: 10px 0;
+    width: 100%;
+}}
+
+#contactoform textarea {
+    margin: 10px 20px;
+    border: none;
+    width: 50%;
+}
+.button {
+    width: 50%;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulos {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    color: #1f272b;
+    font-weight: 300;
+}
+.voluntariado {
+    margin: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.java{
+    text-align: center;
+    color: rgb(104, 83, 104);
+}
